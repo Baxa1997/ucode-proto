@@ -64,7 +64,7 @@ div {
     gap: 6px;
     border: none;
     position: relative;
-
+    color: hsba(220, 23%, 52%, 1);
     padding: 16px 16px;
     cursor: pointer;
     font-weight: 500;
@@ -72,8 +72,9 @@ div {
     border-bottom: 2px solid transparent;
 
     &--selected {
-      border-bottom: 2px solid #1890ff;
-      color: #1890ff;
+      border-bottom: 2px solid #175CD3;
+      color: #175CD3;
+      font-weight: 600;
     }
 
     &--disabled {
@@ -637,5 +638,18 @@ u {
   .react-tabs__tab--selected {
     border-color: #449424;
     color: #449424;
+  }
+}
+
+
+.loginField {
+  
+
+  .MuiInputBase-input {
+    height: 27px;
+
+    &::placeholder {
+      font-size: 16px;
+    }
   }
 }

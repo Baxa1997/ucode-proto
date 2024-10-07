@@ -39,13 +39,14 @@ const LanguageSelector = () => {
   const activeLang = useMemo(() => {
     return languages.find(lang => lang.slug === i18n.language)
   }, [i18n.language])
-
+  
   const open = Boolean(anchorEl);
 
   return (
     <div>
-      <RectangleIconButton color="primary" onClick={handleClick}>
-        <img style={{ width: "18px" }} src={activeLang?.icon} alt="" />
+      <RectangleIconButton style={{width: "130px", height: "44px", borderRadius: '8px'}} color="primary" onClick={handleClick}>
+        <img style={{ width: "20px" }} src={activeLang?.icon} alt="" />
+        <p style={{marginLeft: "10px"}}>{activeLang?.title}</p>
       </RectangleIconButton>
 
       <Menu
